@@ -1,0 +1,137 @@
+.btn
+	display: inline-flex
+	align-items: center
+	font-family: $baseFont
+	color: $white
+	font-size: rem(14px)
+	font-weight: 600
+	text-align: center
+	white-space: nowrap
+	cursor: pointer
+	padding: 0 20px
+	height: rem(46px)
+	position: relative
+	overflow: hidden
+	text-transform: uppercase
+	letter-spacing: 1.12px
+	background-color: $orange
+	border-radius: 7px 
+	&:before 
+		content: ''
+		width: 100% 
+		height: 100% 
+		position: absolute  
+		bottom: 0 
+		left: 0 
+		background-color: $orange2
+		transition: $transition
+		transform-origin: 50% 100% 
+		transform: scaleY(0)
+	span,
+	svg 
+		display: inline-block
+		position: relative
+		z-index: 2
+	svg 
+		fill: $white
+	&:hover 
+		color: $white
+		&:before 
+			transform: scaleY(1)
+	
+	&--blue 
+		background-color: $blue
+		&:before 
+			background-color: $blue2
+	
+	&--bor-white 
+		color: $white 
+		border: 1px solid $white
+		background-color: transparent
+		&:before
+			background-color: $white 
+		&:hover 
+			color: $baseTxt
+	
+	&--icon 
+		padding: 0 
+		width: 46px 
+		justify-content: center
+	
+	&--small
+		height: rem(36px)
+		padding: 0 8px
+		font-size: rem(13px)
+		font-weight: 500
+
+	&--middle
+		height: rem(40px)
+		font-size: rem(13px)
+		letter-spacing: 0.39px
+	
+	&--large 
+		height: rem(60px)
+		padding: 0 40px
+	&--arrow 
+		svg 
+			width: 24px 
+			height: 24px
+			margin-right: 3px
+			fill: transparent
+			stroke: $white
+			stroke-width: 2px
+	
+	&-play 
+		display: inline-block
+		width: 60px 
+		height: 60px 
+		position: relative
+		cursor: pointer
+		svg 
+			width: 100% 
+			height: 100%
+		&__hov 
+			position: absolute 
+			top: 0 
+			left: 0
+			opacity: 0 
+			transition: $transition 
+		&:hover
+			.btn-play__hov 
+				opacity: 1
+
+	&.is-hide
+		display: none
+	&.is-show
+		display: flex
+
+	&[disabled],
+	&.is-disabled
+		opacity: .5
+		pointer-events: none
+	
+	+bp(1100px)
+		&--mobile
+			height: 32px 
+			font-size: rem(12px)
+			padding: 0 14px
+	
+	+bp($bp-medium)
+		height: 40px
+		&--mobile 
+			height: 32px
+		&--small 
+			height: 36px
+		&--large 
+			height: 60px
+
+
+	+bp($bp-small)
+		font-size: rem(14px)
+		height: 40px
+		padding: 0 20px
+		&--small 
+			height: 36px
+		&--large 
+			height: 46px 
+			padding: 0 26px

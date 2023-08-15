@@ -1,0 +1,101 @@
+.slider-arrow
+	display: flex
+	justify-content: space-between
+	width: 110px 
+
+	&--top-right
+		position: absolute 
+		right: 0 
+		top: -80px
+	
+	&--center 
+		position: absolute 
+		top: 50% 
+		transform: translateY(-57%)
+		left: 0px
+		padding: 20px
+		width: 100%
+		z-index: 3
+	
+	&--white 
+		.slider-arrow__item
+			background-color: $white 
+			border-color: $white
+
+
+	&__item 
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		display: flex 
+		align-items: center
+		justify-content: center 
+		cursor: pointer
+		position: relative
+		overflow: hidden
+		transition: 0.4s
+		border: 1px solid $gray2
+		background-color: $white
+		&.swiper-button-disabled
+			opacity: 0.6 
+			pointer-events: none
+
+		svg 
+			width: 9px 
+			height: 16px
+			fill: transparent
+			transition: 0.4s
+			stroke: $baseTxt
+			stroke-width: 2px
+
+
+
+		&:hover
+			border-color: $gray3
+			svg 
+				stroke: $orange
+
+		&--prev:hover 
+
+			svg 
+				transform: translateX(-4px)
+
+		&--next:hover 
+			svg 
+				transform: translateX(4px)
+				transform: none
+
+	+bp($bp-small)
+		&__item 
+			width: 40px 
+			height: 40px
+
+.slider-pagination
+	width: 100% 
+	position: absolute 
+	bottom: 15px
+	left: 0 
+	z-index: 3
+	display: flex
+	justify-content: center 
+	padding-left: 10px 
+	padding-right: 6px
+	.swiper-pagination-bullet
+		width: 100% 
+		max-width: 80px
+		height: 4px
+		margin-right: 4px
+		background-color: $gray4
+		border-radius: 5px
+		cursor: pointer
+		transition: 0.3s 
+		&:hover 
+			background-color: $gray
+	.swiper-pagination-bullet-active
+		background-color: $white
+	
+	+bp($bp-tablet)
+		.swiper-pagination-bullet
+			max-width: 60px
+
+			

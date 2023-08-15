@@ -1,0 +1,86 @@
+*
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0)
+	box-sizing: border-box
+
+*::before,
+*::after
+	box-sizing: inherit
+
+html, :root
+	font-size: $baseRem
+	overflow-x: hidden
+
+	+bp(1024px)
+		-webkit-text-size-adjust: 100%
+
+body
+	font-family: $baseFont
+	font-size: $baseRem
+	color: $baseTxt
+	min-width: 320px
+	padding: 0
+	margin: 0
+	overflow-x: hidden
+		
+	::-moz-selection
+		background: $gray4
+	::selection
+		background: $gray4
+
+.page
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	width: 100%
+	background-color: $white 
+	position: relative 
+	z-index: 2
+
+	+bp(730px)
+		padding-bottom: 54px
+
+.main
+	flex-grow: 1
+	padding-top: 185px
+	
+	+bp(1130px)
+		padding-top: 181px
+	
+	+bp($bp-medium)
+		padding-top: 178px
+
+	+bp(730px)
+		padding-top: 58px
+
+img
+	max-width: 100%
+
+
+.wrapper
+	width: 100%
+	max-width: $content-wrapper-width + ($content-wrapper-gap * 2)
+	padding: 0 $content-wrapper-gap
+	margin: 0 auto
+
+	&--large 
+		max-width: 100%
+
+	&--small
+		max-width: $content-wrapper-width-small + ($content-wrapper-gap * 2)
+
+	+bp($bp-medium)
+		padding: 0 25px
+
+	+bp($bp-small2)
+		padding: 0 15px
+
+.js-tab__block 
+	height: 0px 
+	pointer-events: none 
+	&.is-active
+		pointer-events: auto 
+		height: auto
+
+
+
