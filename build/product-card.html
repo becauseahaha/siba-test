@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Карточка
+    </title>
+    <link rel="icon" href="">
+    <link rel="icon" href="" sizes="16x16">
+    <link rel="stylesheet" href="css/main.css?v=1692396454521">
+  </head>
+  <body>
+    <div class="page js-page">
+      <header class="header js-header">
+        <div class="header__top"> 
+          <div class="wrapper">
+            <div class="header__menu js-mobile-menu">
+              <h2 class="header__mobile-title">Меню </h2>
+              <div class="header__menu-close js-close-mobile-menu">
+                <svg>
+                  <use xlink:href="images/sprites.svg#close"></use>
+                </svg>
+              </div>
+              <nav class="header__nav"> 
+                <ul class="header__list">
+                  <li class="header__item"><a class="link link--default" href="#">О компании</a></li>
+                  <li class="header__item"><a class="link link--default" href="#">Оплата и доставка</a></li>
+                  <li class="header__item"><a class="link link--default" href="#">Гарантия и сопровождение</a></li>
+                  <li class="header__item"><a class="link link--default" href="#">Обзоры</a></li>
+                  <li class="header__item"><a class="link link--default" href="#">Статьи</a></li>
+                  <li class="header__item"><a class="link link--default" href="#">Новости</a></li>
+                  <li class="header__item"><a class="link link--default" href="#">Контакты</a></li>
+                </ul>
+              </nav><a class="header__lk link link--default link--arrow" href="#">
+                <svg>
+                  <use xlink:href="images/sprites.svg#lk"></use>
+                </svg><span>Личный кабинет</span></a><a class="btn btn--middle header__mobile-btn" href="#"> <span>Задать вопрос</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__about">
+          <div class="wrapper">
+            <div class="header__line"><a class="header__mobile-icon" href="#">
+                <svg>
+                  <use xlink:href="images/sprites.svg#place"></use>
+                </svg></a><a class="header__logo" href="main.html"><img src="./images/logo.svg" alt=""/></a><a class="header__mobile-icon" href="tel:+74951208137">
+                <svg>
+                  <use xlink:href="images/sprites.svg#phone"></use>
+                </svg></a>
+              <div class="header__city"> <span class="header__city-value">Москва </span>
+                <svg>
+                  <use xlink:href="images/sprites.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+              <div class="header__part">
+                <address class="header__address">г. Москва, 4-й Лихачёвский переулок, 4с2</address><a class="header__phone" href="tel:+74951208137">+7 (495) 120-81-37</a><span class="header__inform">Офис: 08:00-18:00, касса 08:00-17:00 </span>
+              </div><a class="btn btn--middle btn--mobile header__btn" href="#"> <span>Задать вопрос</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__data">
+          <div class="wrapper">
+            <div class="header__line header__line--large"><a class="btn header__btn-catalog" href="#"> <span>Каталог </span>
+                <svg width="36" height="36">
+                  <use xlink:href="images/sprites.svg#catalog"></use>
+                </svg></a><a class="btn btn--blue header__btn-action" hrfe="#"> <span>акции</span></a>
+              <form class="header__search" action="#" name="form-search">
+                <div class="form-field form-group form-field--search">
+                  <div class="form-field__label">Я ИЩУ...</div>
+                  <input class="form-field__input js-input" type="search" name="search" data-pristine-required-message="" required="required"/>
+                  <div class="form-field__mask"></div>
+                </div>
+                <button class="btn btn--blue btn--icon header__search-btn" type="submit">
+                  <svg width="24" height="24">
+                    <use xlink:href="images/sprites.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+              <div class="header__hide-block"> <a class="header__phone" href="tel:+74951208137">+7 (495) 120-81-37</a><span class="header__inform">Офис: 08:00-18:00, касса 08:00-17:00 </span></div>
+              <div class="header__basket"> 
+                <svg class="header__basket-icon">
+                  <use xlink:href="images/sprites.svg#basket"></use>
+                </svg>
+                <div class="header__basket-name">Корзина </div>
+                <div class="header__price"> <span>231 243</span><span>&#8381; </span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main" id="main">
+        <!--start breadcrumbs-->
+        <div class="breadcrumbs">
+          <div class="wrapper">
+            <div class="breadcrumbs__list"><a class="link breadcrumbs__link" href="#!">Каталог</a><a class="link breadcrumbs__link" href="#!">Венддинговые автоматы</a><a class="link breadcrumbs__link breadcrumbs__link--current" href="#!">Снековые вендинговые автоматы</a>
+            </div>
+          </div>
+          <div class="only-mobile"><a class="breadcrumbs__link breadcrumbs__link--back" href="#!"> 
+              <svg width="5" height="10">
+                <use xlink:href="images/sprites.svg#back"></use>
+              </svg><span>Назад</span></a></div>
+        </div>
+        <!--end breadcrumbs-->
+        <section class="product-card sec">
+          <div class="wrapper product-card__container"> 
+            <div class="product-card__gallery card-gallery">
+              <div class="card-gallery__main">
+                <div class="card-gallery__icon">Хит</div>
+                <div class="swiper" id="js-slider-product-card">
+                  <div class="swiper-wrapper"> 
+                    <div class="swiper-slide" id="slide-0"><img src="images/product-card-1.png"></div>
+                    <div class="swiper-slide" id="slide-1"><img src="images/product-card-1.png"></div>
+                    <div class="swiper-slide" id="slide-2"><img src="images/product-card-1.png"></div>
+                  </div>
+                </div>
+                <div class="card-gallery__figure-1"></div>
+                <div class="card-gallery__figure-1_inner-1"></div>
+                <div class="card-gallery__figure-1_inner-2"></div>
+                <div class="card-gallery__figure-2"></div>
+                <div class="card-gallery__figure-3"></div>
+                <div class="card-gallery__figure-4"></div>
+                <div class="card-gallery__figure-4_inner-1"></div>
+              </div>
+              <div class="card-gallery__controls" id="js-slider-product-card-controls">
+                <button class="card-gallery__control is-active" data-slide="0"><img src="/images/products/product-1.png"></button>
+                <button class="card-gallery__control" data-slide="1"> <img src="/images/products/product-2.png"></button>
+                <button class="card-gallery__control" data-slide="2"> <img src="/images/products/product-3.png"></button>
+              </div>
+            </div>
+            <div class="product-card__details">
+              <h3 class="product-card__title">Кофейный автомат OPERA</h3>
+              <div class="product-card__vendor-details">
+                <div class="product-card__code">Артикул: 142 121</div>
+                <div class="product-card__company"> <img src="/images/company-necta.png"></div>
+              </div>
+              <div class="product-card__description" id="product-card__description"> 
+                <p>Вендинговый автомат OPERA популярный кофейный аппарат от компании Evoca (Necta), который применяется для приготовления 18 разных видов напитков. Для их приготовления применяются растворимые компоненты и натуральный зерновой кофе, что делает его универсальным решением для установки в торговых центрах и офисах... 
+                  <button class="product-card__description-btn" id="product-card__description-btn">Показать еще</button>
+                </p>
+                <p class="is-hidden">Вендинговый автомат OPERA популярный кофейный аппарат от компании Evoca (Necta), который применяется для приготовления 18 разных видов напитков. Для их приготовления применяются растворимые компоненты и натуральный зерновой кофе, что делает его универсальным решением для установки в торговых центрах и офисах</p>
+                <p class="is-hidden">Вендинговый автомат OPERA популярный кофейный аппарат от компании Evoca (Necta), который применяется для приготовления 18 разных видов напитков. Для их приготовления применяются растворимые компоненты и натуральный зерновой кофе, что делает его универсальным решением для установки в торговых центрах и офисах</p>
+              </div>
+              <div class="product-card__qualities">
+                <div class="product-card__qualities-title">Особенности</div>
+                <div class="product-card__qualities-list">
+                                <div class="product-card__qualities-item"> <span class="product-card__qualities-item--grey">Кофемолка: </span><span>регулируемая (от 7 до 15 г)</span></div>
+                                <div class="product-card__qualities-item"> <span class="product-card__qualities-item--grey">Капучинатор: </span><span>автоматический</span></div>
+                                <div class="product-card__qualities-item"> <span class="product-card__qualities-item--grey">Количество напитков: </span><span>до 32 напитков</span></div>
+                                <div class="product-card__qualities-item"> <span class="product-card__qualities-item--grey">Количество видов кофе: </span><span>можно использовать 2 вида кофе</span></div>
+                                <div class="product-card__qualities-item"> <span class="product-card__qualities-item--grey">Экран: </span><span>touch</span></div>
+                </div>
+              </div>
+              <div class="product-card__controls"> 
+                <div class="product-card__prices">
+                  <div class="product-card__price">521 897,71 ₽</div>
+                  <div class="product-card__price-foreign">6 030.00 €</div>
+                </div>
+                <div class="product-card__buy-quantity"> 
+                  <div class="counter js-counter">
+                    <div class="counter__item js-counter__minus"></div>
+                    <div class="counter__item">
+                      <input class="counter__input js-counter__input" title="number" value="1"/>
+                    </div>
+                    <div class="counter__item js-counter__plus"></div>
+                  </div>
+                </div>
+                <button class="product-card__buy-btn btn btn--arrow btn--blue" href="#">
+                  <svg>
+                    <use xlink:href="images/sprites.svg#basket"></use>
+                  </svg><span>В корзину</span>
+                </button>
+              </div>
+              <div class="product-card__partner-stores"><a class="product-card__partner-stores-btn product-card__partner-stores-btn--ozon" href="#">Купить на<img class="icon" src="/images/ozon.svg"></a><a class="product-card__partner-stores-btn product-card__partner-stores-btn--wildberries" href="#">Купить на<img class="icon" src="/images/wildberries.svg"></a></div>
+              <div class="product-card__tabs js-tab js-tab__list">
+                <button class="product-card__tabs-item js-tab__item is-active" data-id="tab-details-1">Характеристики</button>
+                <button class="product-card__tabs-item js-tab__item" data-id="tab-details-2">Меню и настройки</button>
+                <button class="product-card__tabs-item js-tab__item" data-id="tab-details-3">Доставка</button>
+              </div>
+              <div class="js-tab__content">
+                <div class="product-card__tabs-container js-tab__block is-active" id="tab-details-1">
+                  <div class="product-card__tab-details">
+                    <div class="product-card__tab-details-title">Параметры:</div>
+                    <table class="product-card__details-table"> 
+                      <tr>
+                        <td>Габариты ВхШхГ 
+                          <td>1830х717х874 мм</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Вес
+                          <td>225 кг</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Энергопотребление в режиме ожидания
+                          <td>76.5 Вт/ч</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Пиковая мощность
+                          <td>2500 Вт</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Тип оборудования
+                          <td>Автоматическая</td>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="product-card__tab-details">
+                    <div class="product-card__tab-details-title">Параметры:</div>
+                    <table class="product-card__details-table"> 
+                      <tr>
+                        <td>Габариты ВхШхГ 
+                          <td>1830х717х874 мм</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Вес
+                          <td>225 кг</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Энергопотребление в режиме ожидания
+                          <td>76.5 Вт/ч</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Пиковая мощность
+                          <td>2500 Вт</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Тип оборудования
+                          <td>Автоматическая</td>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="product-card__tabs-container js-tab__block" id="tab-details-2"> 
+                  <div class="product-card__tab-details">
+                    <div class="product-card__tab-details-title">Меню и настройки:</div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  </div>
+                </div>
+                <div class="product-card__tabs-container js-tab__block" id="tab-details-3"> 
+                  <div class="product-card__tab-details">
+                    <div class="product-card__tab-details-title">Доставка:</div>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                  </div>
+                </div>
+              </div>
+              <h4 class="product-card__videos-h4">Полезная информация</h4>
+              <div class="product-card__videos"> <a class="b-video js-popup-link" href="#" data-link="video" data-src="https://www.youtube.com/embed/hFj5L6sbX-o">
+                  <div class="b-video__block-image"><img class="b-video__image" src="./images/products/v-1.jpg" alt=""/>
+                    <div class="b-video__icon btn-play">
+                      <svg>
+                        <use xlink:href="images/sprites.svg#play"></use>
+                      </svg>
+                      <svg class="btn-play__hov">
+                        <use xlink:href="images/sprites.svg#play-hov"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="b-video__desc"> 
+                    <h6 class="h6-title">Новинка в ассортименте: Капсулы EP Aroma Club</h6><small class="small-title">26 июня 2023</small>
+                  </div></a><a class="b-video b-video--news" href="#">
+                  <div class="b-video__block-image"><img class="b-video__image" src="./images/news/news-1.jpg" alt=""/>
+                  </div>
+                  <div class="b-video__desc"> 
+                    <h6 class="h6-title">Итоги выставки Versus 2023</h6><small class="small-title">26 июня 2023</small>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products sec sec--small">
+          <div class="wrapper">
+            <div class="products__container js-tab">
+              <div class="products__tab js-tab__list">
+                <h4 class="title products__title js-tab__item is-active" data-id="popular">Популярное</h4>
+                <h4 class="title products__title js-tab__item" data-id="novelties">Новинки</h4>
+              </div>
+              <div class="js-tab__content">
+                <div class="js-tab__block is-active" id="popular">
+                  <div class="products__slider swiper-container js-slider-horizontal"> 
+                    <div class="swiper-wrapper products__swiper-wrapper"> 
+                      <div class="swiper-slide products__item">
+                        <div class="product product_horizontal"><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-1.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Снековый автомат SWING (под заказ)</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>100 000</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__item">
+                        <div class="product product_horizontal"><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-2.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Кофе в зернах BOASI «Gran Crema»</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>785</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__item"> 
+                        <div class="product product_horizontal"><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-3.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Зерновая кофемашина Necta Koro Prime ES3</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>215 000</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__item"> 
+                        <div class="product product_horizontal"><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-4.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Kikko ES6</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>100 000</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__item"> 
+                        <div class="product product_horizontal"><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-5.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Капсула LВ Caffe Crema Lungo</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>100 000</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-arrow slider-arrow--top-right">
+                      <div class="slider-arrow__item slider-arrow__item--prev js-slider__prev">
+                        <svg>
+                          <use xlink:href="images/sprites.svg#prev"></use>
+                        </svg>
+                      </div>
+                      <div class="slider-arrow__item slider-arrow__item--next js-slider__next">
+                        <svg>
+                          <use xlink:href="images/sprites.svg#next"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="js-tab__block" id="novelties">
+                  <div class="products__slider swiper-container js-slider"> 
+                    <div class="swiper-wrapper products__swiper-wrapper"> 
+                      <div class="swiper-slide products__item"> 
+                        <div class="product">
+                          <div class="product-icon">Хит</div><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-4.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Kikko ES6</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>100 000</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__item"> 
+                        <div class="product">
+                          <div class="product-icon">Хит</div><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-1.png" alt=""/>
+                              </div>
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-2.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Снековый автомат SWING (под заказ)</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>100 000</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__item">
+                        <div class="product">
+                          <div class="product-icon">Хит</div><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-2.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Кофе в зернах BOASI «Gran Crema»</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>785</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__item"> 
+                        <div class="product">
+                          <div class="product-icon">Хит</div><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-3.png" alt=""/>
+                              </div>
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-1.png" alt=""/>
+                              </div>
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-2.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Зерновая кофемашина Necta Koro Prime ES3</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>215 000</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__item"> 
+                        <div class="product">
+                          <div class="product-icon">Хит</div><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-5.png" alt=""/>
+                              </div>
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-2.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Капсула LВ Caffe Crema Lungo</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>100 000</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__item"> 
+                        <div class="product">
+                          <div class="product-icon">Хит</div><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-2.png" alt=""/>
+                              </div>
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-4.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Снековый автомат SWING (под заказ)</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>4 600</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__item"> 
+                        <div class="product">
+                          <div class="product-icon">Хит</div><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-5.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Капсула LВ Caffe Crema Lungo</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>100 000</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__item">
+                        <div class="product">
+                          <div class="product-icon">Хит</div><a class="product__image-slider swiper-container js-product-slider" href="#">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide product__slide"><img src="./images/products/product-2.png" alt=""/>
+                              </div>
+                            </div>
+                            <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#next"></use>
+                              </svg>
+                            </div>
+                            <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                              <svg>
+                                <use xlink:href="images/sprites.svg#prev"></use>
+                              </svg>
+                            </div></a>
+                          <div class="product__desc"><a class="product__desc-wrap" href="#">
+                              <div class="product__about">
+                                <h6 class="product__name">Снековый автомат SWING (под заказ)</h6><small class="product__text">Артикул 142 364</small>
+                              </div>
+                              <div class="product__prices">
+                                <div class="product__price"><span>4 600</span><span>&#8381;</span></div>
+                              </div></a>
+                            <div class="product__data">
+                              <div class="counter js-counter">
+                                <div class="counter__item js-counter__minus"></div>
+                                <div class="counter__item">
+                                  <input class="counter__input js-counter__input" title="number" value="1"/>
+                                </div>
+                                <div class="counter__item js-counter__plus"></div>
+                              </div>
+                              <div class="btn btn--blue btn--small btn--arrow product__btn">
+                                <svg>
+                                  <use xlink:href="images/sprites.svg#basket"></use>
+                                </svg><span>в корзину</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-arrow slider-arrow--top-right">
+                      <div class="slider-arrow__item slider-arrow__item--prev js-slider__prev">
+                        <svg>
+                          <use xlink:href="images/sprites.svg#prev"></use>
+                        </svg>
+                      </div>
+                      <div class="slider-arrow__item slider-arrow__item--next js-slider__next">
+                        <svg>
+                          <use xlink:href="images/sprites.svg#next"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products products--action sec sec--small">
+          <div class="wrapper">
+            <div class="products__container">
+              <div class="products__tab js-tab__list">
+                <h4 class="title products__title">&nbsp;</h4>
+              </div>
+              <div class="products__slider swiper-container js-slider"> 
+                <div class="swiper-wrapper products__swiper-wrapper"> 
+                  <div class="swiper-slide products__item"> 
+                    <div class="product"><a class="product__image-slider swiper-container js-product-slider" href="#">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide product__slide"><img src="./images/products/product-6.png" alt=""/>
+                          </div>
+                        </div>
+                        <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                          <svg>
+                            <use xlink:href="images/sprites.svg#next"></use>
+                          </svg>
+                        </div>
+                        <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                          <svg>
+                            <use xlink:href="images/sprites.svg#prev"></use>
+                          </svg>
+                        </div></a>
+                      <div class="product__desc"><a class="product__desc-wrap" href="#">
+                          <div class="product__about">
+                            <h6 class="product__name">Капсульная кофемашина CLASSY&amp;MILK</h6><small class="product__text">Артикул 142 364</small>
+                          </div>
+                          <div class="product__prices">
+                            <div class="product__price"><span>51 625</span><span>&#8381;</span></div>
+                            <div class="product__price product__price--old"><span>57 625</span><span>&#8381;</span></div>
+                          </div></a>
+                        <div class="product__data">
+                          <div class="counter js-counter">
+                            <div class="counter__item js-counter__minus"></div>
+                            <div class="counter__item">
+                              <input class="counter__input js-counter__input" title="number" value="1"/>
+                            </div>
+                            <div class="counter__item js-counter__plus"></div>
+                          </div>
+                          <div class="btn btn--blue btn--small btn--arrow product__btn">
+                            <svg>
+                              <use xlink:href="images/sprites.svg#basket"></use>
+                            </svg><span>в корзину</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide products__item"> 
+                    <div class="product"><a class="product__image-slider swiper-container js-product-slider" href="#">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide product__slide"><img src="./images/products/product-7.png" alt=""/>
+                          </div>
+                        </div>
+                        <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                          <svg>
+                            <use xlink:href="images/sprites.svg#next"></use>
+                          </svg>
+                        </div>
+                        <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                          <svg>
+                            <use xlink:href="images/sprites.svg#prev"></use>
+                          </svg>
+                        </div></a>
+                      <div class="product__desc"><a class="product__desc-wrap" href="#">
+                          <div class="product__about">
+                            <h6 class="product__name">Кофе в зернах LAVAZZA Espresso «Crema e Aroma»</h6><small class="product__text">Артикул 142 364</small>
+                          </div>
+                          <div class="product__prices">
+                            <div class="product__price"><span>2 100</span><span>&#8381;</span></div>
+                            <div class="product__price product__price--old"><span>3 100</span><span>&#8381;</span></div>
+                          </div></a>
+                        <div class="product__data">
+                          <div class="counter js-counter">
+                            <div class="counter__item js-counter__minus"></div>
+                            <div class="counter__item">
+                              <input class="counter__input js-counter__input" title="number" value="1"/>
+                            </div>
+                            <div class="counter__item js-counter__plus"></div>
+                          </div>
+                          <div class="btn btn--blue btn--small btn--arrow product__btn">
+                            <svg>
+                              <use xlink:href="images/sprites.svg#basket"></use>
+                            </svg><span>в корзину</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide products__item"> 
+                    <div class="product"><a class="product__image-slider swiper-container js-product-slider" href="#">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide product__slide"><img src="./images/products/product-8.png" alt=""/>
+                          </div>
+                          <div class="swiper-slide product__slide"><img src="./images/products/product-2.png" alt=""/>
+                          </div>
+                          <div class="swiper-slide product__slide"><img src="./images/products/product-5.png" alt=""/>
+                          </div>
+                        </div>
+                        <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                          <svg>
+                            <use xlink:href="images/sprites.svg#next"></use>
+                          </svg>
+                        </div>
+                        <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                          <svg>
+                            <use xlink:href="images/sprites.svg#prev"></use>
+                          </svg>
+                        </div></a>
+                      <div class="product__desc"><a class="product__desc-wrap" href="#">
+                          <div class="product__about">
+                            <h6 class="product__name">Kikko ES6</h6><small class="product__text">Артикул 142 364</small>
+                          </div>
+                          <div class="product__prices">
+                            <div class="product__price"><span>100 000</span><span>&#8381;</span></div>
+                            <div class="product__price product__price--old"><span>130 000</span><span>&#8381;</span></div>
+                          </div></a>
+                        <div class="product__data">
+                          <div class="counter js-counter">
+                            <div class="counter__item js-counter__minus"></div>
+                            <div class="counter__item">
+                              <input class="counter__input js-counter__input" title="number" value="1"/>
+                            </div>
+                            <div class="counter__item js-counter__plus"></div>
+                          </div>
+                          <div class="btn btn--blue btn--small btn--arrow product__btn">
+                            <svg>
+                              <use xlink:href="images/sprites.svg#basket"></use>
+                            </svg><span>в корзину</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide products__item"> 
+                    <div class="product"><a class="product__image-slider swiper-container js-product-slider" href="#">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide product__slide"><img src="./images/products/product-9.png" alt=""/>
+                          </div>
+                        </div>
+                        <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                          <svg>
+                            <use xlink:href="images/sprites.svg#next"></use>
+                          </svg>
+                        </div>
+                        <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                          <svg>
+                            <use xlink:href="images/sprites.svg#prev"></use>
+                          </svg>
+                        </div></a>
+                      <div class="product__desc"><a class="product__desc-wrap" href="#">
+                          <div class="product__about">
+                            <h6 class="product__name">Капсулы EP Aroma Club (коробка)</h6><small class="product__text">Артикул 142 364</small>
+                          </div>
+                          <div class="product__prices">
+                            <div class="product__price"><span>4 500</span><span>&#8381;</span></div>
+                            <div class="product__price product__price--old"><span>5 500</span><span>&#8381;</span></div>
+                          </div></a>
+                        <div class="product__data">
+                          <div class="counter js-counter">
+                            <div class="counter__item js-counter__minus"></div>
+                            <div class="counter__item">
+                              <input class="counter__input js-counter__input" title="number" value="1"/>
+                            </div>
+                            <div class="counter__item js-counter__plus"></div>
+                          </div>
+                          <div class="btn btn--blue btn--small btn--arrow product__btn">
+                            <svg>
+                              <use xlink:href="images/sprites.svg#basket"></use>
+                            </svg><span>в корзину</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide products__item">
+                    <div class="product"><a class="product__image-slider swiper-container js-product-slider" href="#">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide product__slide"><img src="./images/products/product-7.png" alt=""/>
+                          </div>
+                        </div>
+                        <div class="product__arrows-item product__arrows-item--next js-product-slider__next swiper-button-next">
+                          <svg>
+                            <use xlink:href="images/sprites.svg#next"></use>
+                          </svg>
+                        </div>
+                        <div class="product__arrows-item js-product-slider__prev swiper-button-prev">
+                          <svg>
+                            <use xlink:href="images/sprites.svg#prev"></use>
+                          </svg>
+                        </div></a>
+                      <div class="product__desc"><a class="product__desc-wrap" href="#">
+                          <div class="product__about">
+                            <h6 class="product__name">Кофе в зернах LAVAZZA Espresso «Crema e Aroma»</h6><small class="product__text">Артикул 142 364</small>
+                          </div>
+                          <div class="product__prices">
+                            <div class="product__price"><span>2 100</span><span>&#8381;</span></div>
+                            <div class="product__price product__price--old"><span>3 100</span><span>&#8381;</span></div>
+                          </div></a>
+                        <div class="product__data">
+                          <div class="counter js-counter">
+                            <div class="counter__item js-counter__minus"></div>
+                            <div class="counter__item">
+                              <input class="counter__input js-counter__input" title="number" value="1"/>
+                            </div>
+                            <div class="counter__item js-counter__plus"></div>
+                          </div>
+                          <div class="btn btn--blue btn--small btn--arrow product__btn">
+                            <svg>
+                              <use xlink:href="images/sprites.svg#basket"></use>
+                            </svg><span>в корзину</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-arrow slider-arrow--top-right">
+                  <div class="slider-arrow__item slider-arrow__item--prev js-slider__prev">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#prev"></use>
+                    </svg>
+                  </div>
+                  <div class="slider-arrow__item slider-arrow__item--next js-slider__next">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#next"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="wrapper footer__wrapper">
+          <div class="footer__top"> 
+            <div class="footer__unit"> 
+              <svg>
+                <use xlink:href="images/sprites.svg#footer-sale"></use>
+              </svg><small class="footer__unit-text">Выгодная система скидок</small>
+            </div>
+            <div class="footer__unit"> 
+              <svg>
+                <use xlink:href="images/sprites.svg#footer-support"></use>
+              </svg><small class="footer__unit-text">Сервисная поддержка</small>
+            </div>
+            <div class="footer__unit"> 
+              <svg>
+                <use xlink:href="images/sprites.svg#footer-delivery"></use>
+              </svg><small class="footer__unit-text">Бесплатная доставка</small>
+            </div>
+            <div class="footer__unit"> 
+              <svg>
+                <use xlink:href="images/sprites.svg#footer-learn"></use>
+              </svg><small class="footer__unit-text">Бесплатное обучение</small>
+            </div>
+          </div>
+          <div class="footer__part"> 
+            <div class="footer__column footer__column--left"><a class="footer__unit-top" href="main.html"><img src="./images/logo.svg" alt=""/></a>
+              <div class="footer__city"> <span class="footer__city-value">Москва</span>
+                <svg width="14" height="7">
+                  <use xlink:href="images/sprites.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+              <div class="footer__item"> 
+                <address class="footer__data-name">125438, г. Москва, 4-й Лихачёвский переулок, 4с2</address><span>Офис: 08:00-18:00, касса 08:00-17:00</span>
+              </div>
+              <div class="footer__item"> <a class="footer__data-name link link--bor link--bor-white link--white" href="tel:+74951208137">+7 (495) 120-81-37</a><span>Бесплатно, с 08:00 до 18:00</span></div>
+              <div class="footer__item"> <a class="footer__data-name link link--bor link--bor-white link--white" href="mailto:b2b@siba-vending.ru">b2b@siba-vending.ru</a><span>Остались вопросы? Напишите нам</span></div>
+              <div class="footer__tablet"> 
+                <div class="footer__unit-top footer__unit-top--small">
+                  <h6 class="h6-title">Рассылка всего самого вкусного из новинок и акций продукции</h6>
+                  <form class="footer__form js-form" action="#" name="form-search" data-thank="#popup-thank">
+                    <div class="form-field form-group">
+                      <div class="form-field__label">Email</div>
+                      <input class="form-field__input js-input" type="email" name="email" data-pristine-required-message="" required="required"/>
+                      <div class="form-field__mask"></div>
+                    </div>
+                    <button class="btn btn--middle footer__btn" type="submit"><span>Подписаться</span>
+                      <svg class="footer__btn-icon">
+                        <use xlink:href="images/sprites.svg#send"></use>
+                      </svg>
+                    </button>
+                  </form>
+                  <div class="soc"> <a class="soc__link" href="#" target="_blank">
+                      <svg>
+                        <use xlink:href="images/sprites.svg#facebook"></use>
+                      </svg></a><a class="soc__link" href="#" target="_blank">
+                      <svg>
+                        <use xlink:href="images/sprites.svg#instagram"></use>
+                      </svg></a><a class="soc__link" href="#" target="_blank">
+                      <svg>
+                        <use xlink:href="images/sprites.svg#youtube"></use>
+                      </svg></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__column footer__column--flex footer__column--menu">
+              <div class="footer__column-unit">
+                <div class="footer__unit-top"> 
+                  <h6 class="h6-title">Сиба-вендинг</h6>
+                </div>
+                <ul class="footer__list"> 
+                  <li class="footer__list-item"><a class="footer__link" href="#">О компании</a></li>
+                  <li class="footer__list-item"><a class="footer__link" href="#">Оплата и доставка</a></li>
+                  <li class="footer__list-item"><a class="footer__link" href="#">Гарантия и сопровождение</a></li>
+                </ul>
+              </div>
+              <div class="footer__column-unit"> 
+                <div class="footer__unit-top footer__unit-top--top">
+                  <h6 class="h6-title">Каталог</h6>
+                </div>
+                <ul class="footer__list"> 
+                  <li class="footer__list-item"><a class="footer__link" href="#">Вендинговые автоматы</a></li>
+                  <li class="footer__list-item"><a class="footer__link" href="#">Ингредиенты для вендинговых автоматов</a></li>
+                  <li class="footer__list-item"><a class="footer__link" href="#">Кофемашины для бизнеса</a></li>
+                  <li class="footer__list-item"><a class="footer__link" href="#">Доп. оборудование для вендинга</a></li>
+                  <li class="footer__list-item"><a class="footer__link" href="#">Запчасти и ремонт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__column footer__column--right footer__desctop">
+              <div class="footer__unit-top footer__unit-top--small">
+                <h6 class="h6-title">Рассылка всего самого вкусного из новинок и акций продукции</h6>
+                <form class="footer__form js-form" action="#" name="form-search" data-thank="#popup-thank">
+                  <div class="form-field form-group">
+                    <div class="form-field__label">Email</div>
+                    <input class="form-field__input js-input" type="email" name="email" data-pristine-required-message="" required="required"/>
+                    <div class="form-field__mask"></div>
+                  </div>
+                  <button class="btn btn--middle footer__btn" type="submit"><span>Подписаться</span>
+                    <svg class="footer__btn-icon">
+                      <use xlink:href="images/sprites.svg#send"></use>
+                    </svg>
+                  </button>
+                </form>
+                <div class="soc"> <a class="soc__link" href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#facebook"></use>
+                    </svg></a><a class="soc__link" href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#instagram"></use>
+                    </svg></a><a class="soc__link" href="#" target="_blank">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#youtube"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__part footer__part--bottom"> 
+            <div class="footer__column footer__column--left"><span>2023 © СИБА-Вендинг. Все права защищены</span></div>
+            <div class="footer__column footer__column--flex">
+              <div class="footer__column-unit"> <a class="link link--bor link--bor-white link--white" href="#" target="_blank">Пользовательское соглашение</a></div>
+              <div class="footer__column-unit footer__column-unit--rules"><a class="link link--bor link--bor-white link--white" href="#" target="_blank">Политика конфиденциальности</a></div>
+            </div>
+            <div class="footer__column footer__column--right footer__web-unit"><span class="footer__web">Разработка сайта — <a href="https://nikoland.ru/" target="_blank" class="link link--bor link--bor-white link--white footer__web-link">Nikoland</a></span></div>
+          </div>
+        </div>
+      </footer>
+      <div class="mobile-navbar js-mobile-navbar">
+        <div class="mobile-navbar__main"><a class="mobile-navbar__item is-active" href="main.html">
+            <svg class="mobile-navbar__icon">
+              <use xlink:href="images/sprites.svg#main"></use>
+            </svg>
+            <div class="mobile-navbar__text">Главная</div></a><a class="mobile-navbar__item" href="catalog.html">
+            <svg class="mobile-navbar__icon">
+              <use xlink:href="images/sprites.svg#catalog2"></use>
+            </svg>
+            <div class="mobile-navbar__text">Каталог</div></a><a class="mobile-navbar__item" href="basket.html">
+            <svg class="mobile-navbar__icon">
+              <use xlink:href="images/sprites.svg#basket2"></use>
+            </svg>
+            <div class="mobile-navbar__text">Корзина</div></a><a class="mobile-navbar__item" href="lk.html">
+            <svg class="mobile-navbar__icon">
+              <use xlink:href="images/sprites.svg#lk2"></use>
+            </svg>
+            <div class="mobile-navbar__text">Кабинет</div></a><a class="mobile-navbar__item js-open-mobile-menu">
+            <svg class="mobile-navbar__icon">
+              <use xlink:href="images/sprites.svg#menu"></use>
+            </svg>
+            <div class="mobile-navbar__text">Mеню</div></a></div>
+      </div>
+    </div>
+    <div class="popups-wrapper js-popups-wrapper">
+      <div class="popups-wrapper__layout">
+        <div class="popups-wrapper__overlay js-popup-close"></div>
+        <div class="popups-wrapper__close js-popup-close">
+              <svg>
+                <use xlink:href="images/sprites.svg#close"></use>
+              </svg>
+        </div>
+        <div class="popups-wrapper__inner">
+              <div class="popup js-popup" data-block="fetch-content">
+                <div class="js-fetch-wrapper"></div>
+              </div>
+              <div class="popup js-popup" data-block="feedback">
+                <h2 class="popup__name">Написать нам </h2>
+                <form class="form js-form" action="#" method="GET" data-thank="#popup-thank" style="max-width: 500px">
+                  <div class="form__grid">
+                    <div class="form__line">
+                          <div class="form-field form-group">
+                            <div class="form-field__label">Ваше имя</div>
+                            <input class="form-field__input js-input" type="text" name="name" data-pristine-required-message="Обязательное поле" required>
+                            <div class="form-field__mask"></div>
+                          </div>
+                    </div>
+                    <div class="form__line">
+                          <div class="form-field form-group">
+                            <div class="form-field__label">Ваш телефон</div>
+                            <input class="form-field__input js-input js-phone" type="tel" name="phone" data-pristine-required-message="" data-mask="+7-(___)-___-____" data-slots="_" minlength="11" required>
+                            <div class="form-field__mask"></div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="form__line">
+                        <div class="form-field form-group">
+                          <label class="form-field__label-select">Ваш возраст</label>
+                          <select class="js-select" name="old" required>
+                            <option data-display="Select"></option>
+                            <option value="0">20-30</option>
+                            <option value="1">30-40</option>
+                            <option value="2">40-50</option>
+                          </select>
+                        </div>
+                  </div>
+                  <div class="form__line">
+                        <label class="form-checkbox form-group">
+                          <input class="form-checkbox__input js-checkbox-rules" type="checkbox" checked><span class="form-checkbox__checkmark"></span><span class="form-checkbox__text">Принимаю условия <a href="#" target="_blank" class="link link--blue">использования информации</a></span>
+                        </label>
+                  </div>
+                  <div class="form__line">
+                    <button class="btn btn--middle js-form-submit" type="submit"> <span>Оформить</span>
+                      <div class="btn__shadow"></div>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="popup js-popup" data-block="thank" id="popup-thank">
+                <div class="popup__thank-block"> 
+                  <h2 class="popup__name">Спасибо!</h2>
+                  <p>Наш менеджер с Вами свяжется в ближайшее время!</p>
+                </div>
+              </div>
+              <div class="popup js-popup" data-block="video">
+                <iframe class="js-iframe" src="" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+              </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.js?v=1692396454523"></script>
+    <script src="js/main.js?v=1692396454523"></script>
+  </body>
+</html>

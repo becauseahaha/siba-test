@@ -1,7 +1,7 @@
 include ../counter/counter
 
 mixin product(props)
-	.product
+	.product(class=props.horizontal===true ? "product_horizontal" : "")
 		if props.hit 
 			.product-icon Хит
 		if props.sale 

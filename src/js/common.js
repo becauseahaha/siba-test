@@ -57,4 +57,11 @@ D.addEventListener("DOMContentLoaded", function() {
 	openMenu.addEventListener('click', mobileMenu);
 	closeMenu.addEventListener('click', mobileMenu);
 
+	document.getElementById('product-card__description-btn').addEventListener('click', function() {
+		document.querySelectorAll('#product-card__description .is-hidden').forEach(el => {
+			el.classList.remove('is-hidden');
+		})
+		this.remove();
+	})
+
 })

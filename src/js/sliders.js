@@ -55,6 +55,30 @@ D.addEventListener("DOMContentLoaded", function () {
 		});
 	})
 
+	// product card page main slider 
+	const swiper_product_card = new Swiper('#js-slider-product-card', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		speed: 900
+	});
+	swiper_product_card.on('activeIndexChange', function (data) {
+		productCardUpdatePagination(data.activeIndex);
+	});
+	document.querySelectorAll('#js-slider-product-card-controls button').forEach(el => {
+		el.addEventListener('click', function() {
+			swiper_product_card.slideTo(this.dataset.slide);
+		})
+	})
+	function productCardUpdatePagination(index = 0)
+	{
+		document.querySelectorAll('#js-slider-product-card-controls button').forEach(el => {
+			el.classList.remove('is-active');
+			if (el.dataset.slide == index) {
+				el.classList.add('is-active');
+			}
+		})
+	}
+	// ---
 
 	//main slider 
 	const slider = D.querySelectorAll('.js-slider');
@@ -63,7 +87,6 @@ D.addEventListener("DOMContentLoaded", function () {
 			slidesPerView: 2,
 			spaceBetween: 0,
 			speed: 900,
-			simulateTouch: false,
 			navigation: {
 				nextEl: ".js-slider__next",
 				prevEl: ".js-slider__prev",
@@ -87,6 +110,38 @@ D.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 	})
+
+		//main slider horizontal
+		const slider_horizontal = D.querySelectorAll('.js-slider-horizontal');
+		slider_horizontal.forEach(el => {
+			const swiper = new Swiper(el, {
+				slidesPerView: 2,
+				spaceBetween: 0,
+				speed: 900,
+				simulateTouch: false,
+				navigation: {
+					nextEl: ".js-slider__next",
+					prevEl: ".js-slider__prev",
+				},
+				breakpoints: {
+					800: {
+						slidesPerView: 3,
+						spaceBetween: 20,
+						simulateTouch: true,
+					},
+					1000: {
+						slidesPerView: 3,
+						spaceBetween: 20,
+						simulateTouch: true,
+					},
+					1300: {
+						slidesPerView: 3,
+						spaceBetween: 20,
+						simulateTouch: true,
+					}
+				}
+			});
+		})
 
 	//product slider 
 	const productSlider = D.querySelectorAll('.js-product-slider');
