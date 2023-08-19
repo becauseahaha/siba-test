@@ -111,37 +111,48 @@ D.addEventListener("DOMContentLoaded", function () {
 		});
 	})
 
-		//main slider horizontal
-		const slider_horizontal = D.querySelectorAll('.js-slider-horizontal');
-		slider_horizontal.forEach(el => {
-			const swiper = new Swiper(el, {
-				slidesPerView: 2,
-				spaceBetween: 0,
-				speed: 900,
-				simulateTouch: false,
-				navigation: {
-					nextEl: ".js-slider__next",
-					prevEl: ".js-slider__prev",
-				},
-				breakpoints: {
-					800: {
-						slidesPerView: 3,
-						spaceBetween: 20,
-						simulateTouch: true,
-					},
-					1000: {
-						slidesPerView: 3,
-						spaceBetween: 20,
-						simulateTouch: true,
-					},
-					1300: {
-						slidesPerView: 3,
-						spaceBetween: 20,
-						simulateTouch: true,
+	//main slider horizontal
+	const slider_horizontal = D.querySelectorAll('.js-slider-horizontal');
+	slider_horizontal.forEach(el => {
+
+		const navId = el.dataset.navigation;
+
+		const swiper = new Swiper(el, {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			speed: 900,
+			simulateTouch: true,
+			navigation: {
+				nextEl: "#" + navId + " .js-slider__next",
+				prevEl: "#" + navId + " .js-slider__prev",
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					simulateTouch: true,
+					spaceBetween: 10,
+					grid: {
+						rows: 99
 					}
+				},
+				481: {
+					slidesPerView: 1,
+					simulateTouch: true,
+					grid: {
+						rows: 1
+					}
+				},
+				768: {
+					slidesPerView: 2,
+					simulateTouch: true
+				},
+				1280: {
+					slidesPerView: 3,
+					simulateTouch: false
 				}
-			});
-		})
+			}
+		});
+	})
 
 	//product slider 
 	const productSlider = D.querySelectorAll('.js-product-slider');

@@ -88,49 +88,50 @@ block content
 					a(href="#").product-card__partner-stores-btn.product-card__partner-stores-btn--wildberries Купить на
 						img.icon(src="images/wildberries.svg")
 				
-				.product-card__tabs.js-tab.js-tab__list
-					button.product-card__tabs-item.js-tab__item.is-active(data-id="tab-details-1") Характеристики
-					button.product-card__tabs-item.js-tab__item(data-id="tab-details-2") Меню и настройки
-					button.product-card__tabs-item.js-tab__item(data-id="tab-details-3") Доставка
+				.js-tab
+					.product-card__tabs.js-tab__list
+						button.product-card__tabs-item.js-tab__item.is-active(data-id="tab-details-1") Характеристики
+						button.product-card__tabs-item.js-tab__item(data-id="tab-details-2") Меню и настройки
+						button.product-card__tabs-item.js-tab__item(data-id="tab-details-3") Доставка
 
-				.js-tab__content
-					.product-card__tabs-container.js-tab__block#tab-details-1.is-active
-						.product-card__tab-details
-							.product-card__tab-details-title Параметры:
-							table.product-card__details-table 
-								tr: td Габариты ВхШхГ 
-									td 1830х717х874 мм
-								tr: td Вес
-									td 225 кг
-								tr: td Энергопотребление в режиме ожидания
-									td 76.5 Вт/ч
-								tr: td Пиковая мощность
-									td 2500 Вт
-								tr: td Тип оборудования
-									td Автоматическая
-						.product-card__tab-details
-							.product-card__tab-details-title Параметры:
-							table.product-card__details-table 
-								tr: td Габариты ВхШхГ 
-									td 1830х717х874 мм
-								tr: td Вес
-									td 225 кг
-								tr: td Энергопотребление в режиме ожидания
-									td 76.5 Вт/ч
-								tr: td Пиковая мощность
-									td 2500 Вт
-								tr: td Тип оборудования
-									td Автоматическая
+					.js-tab__content
+						.product-card__tabs-container.js-tab__block#tab-details-1.is-active
+							.product-card__tab-details
+								.product-card__tab-details-title Параметры:
+								table.product-card__details-table 
+									tr: td Габариты ВхШхГ 
+										td 1830х717х874 мм
+									tr: td Вес
+										td 225 кг
+									tr: td Энергопотребление в режиме ожидания
+										td 76.5 Вт/ч
+									tr: td Пиковая мощность
+										td 2500 Вт
+									tr: td Тип оборудования
+										td Автоматическая
+							.product-card__tab-details
+								.product-card__tab-details-title Параметры:
+								table.product-card__details-table 
+									tr: td Габариты ВхШхГ 
+										td 1830х717х874 мм
+									tr: td Вес
+										td 225 кг
+									tr: td Энергопотребление в режиме ожидания
+										td 76.5 Вт/ч
+									tr: td Пиковая мощность
+										td 2500 Вт
+									tr: td Тип оборудования
+										td Автоматическая
 
-					.product-card__tabs-container.js-tab__block#tab-details-2 
-						.product-card__tab-details
-							.product-card__tab-details-title Меню и настройки:
-							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						.product-card__tabs-container.js-tab__block#tab-details-2 
+							.product-card__tab-details
+								.product-card__tab-details-title Меню и настройки:
+								p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-					.product-card__tabs-container.js-tab__block#tab-details-3 
-						.product-card__tab-details
-							.product-card__tab-details-title Доставка:
-							p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+						.product-card__tabs-container.js-tab__block#tab-details-3 
+							.product-card__tab-details
+								.product-card__tab-details-title Доставка:
+								p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
 				h4.product-card__videos-h4 Полезная информация
 				.product-card__videos 
@@ -150,130 +151,76 @@ block content
 						date: '26 июня 2023',
 					})
 
-	section.products.sec.sec--small
+	section.products-horizontal.sec.sec--small
 		.wrapper
-			.products__container.js-tab
-				.products__tab.js-tab__list
-					h4.title.products__title.js-tab__item.is-active(data-id="popular") Популярное
-					h4.title.products__title.js-tab__item(data-id="novelties") Новинки
-				.js-tab__content
-					.js-tab__block.is-active#popular
-						.products__slider.swiper-container.js-slider-horizontal 
-							.swiper-wrapper.products__swiper-wrapper 
-								.swiper-slide.products__item
-									+product({
-										horizontal: true,
-										img: 'product-1.png',
-										name: 'Снековый автомат SWING (под заказ)', 
-										text: 'Артикул 142 364',
-										price: '100 000'
-									})
-								.swiper-slide.products__item
-									+product({
-										horizontal: true,
-										img: 'product-2.png',
-										name: 'Кофе в зернах BOASI «Gran Crema»', 
-										text: 'Артикул 142 364',
-										price: '785'
-									})
-								.swiper-slide.products__item 
-									+product({
-										horizontal: true,
-										img: 'product-3.png',
-										name: 'Зерновая кофемашина Necta Koro Prime ES3', 
-										text: 'Артикул 142 364',
-										price: '215 000'
-									})
-								.swiper-slide.products__item 
-									+product({
-										horizontal: true,
-										img: 'product-4.png',
-										name: 'Kikko ES6', 
-										text: 'Артикул 142 364',
-										price: '100 000'
-									})
-								.swiper-slide.products__item 
-									+product({
-										horizontal: true,
-										img: 'product-5.png',
-										name: 'Капсула LВ Caffe Crema Lungo', 
-										text: 'Артикул 142 364',
-										price: '100 000'
-									})
-							+slider-arrow({prev: 'js-slider__prev', next: 'js-slider__next'}).slider-arrow--top-right
-					.js-tab__block#novelties
-						.products__slider.swiper-container.js-slider 
-							.swiper-wrapper.products__swiper-wrapper 
-								.swiper-slide.products__item 
-									+product({
-										hit: true, 
-										img: 'product-4.png',
-										name: 'Kikko ES6', 
-										text: 'Артикул 142 364',
-										price: '100 000'
-									})
-								.swiper-slide.products__item 
-									+product({
-										hit: true, 
-										img: 'product-1.png',
-										img2: 'product-2.png',
-										name: 'Снековый автомат SWING (под заказ)', 
-										text: 'Артикул 142 364',
-										price: '100 000'
-									})
-								.swiper-slide.products__item
-									+product({
-										hit: true, 
-										img: 'product-2.png',
-										name: 'Кофе в зернах BOASI «Gran Crema»', 
-										text: 'Артикул 142 364',
-										price: '785'
-									})
-								.swiper-slide.products__item 
-									+product({
-										hit: true, 
-										img: 'product-3.png',
-										img2: 'product-1.png',
-										img3: 'product-2.png',
-										name: 'Зерновая кофемашина Necta Koro Prime ES3', 
-										text: 'Артикул 142 364',
-										price: '215 000'
-									})
-								.swiper-slide.products__item 
-									+product({
-										hit: true, 
-										img: 'product-5.png',
-										img2: 'product-2.png',
-										name: 'Капсула LВ Caffe Crema Lungo', 
-										text: 'Артикул 142 364',
-										price: '100 000'
-									})
-								.swiper-slide.products__item 
-									+product({
-										hit: true, 
-										img: 'product-2.png',
-										img2: 'product-4.png',
-										name: 'Снековый автомат SWING (под заказ)', 
-										text: 'Артикул 142 364',
-										price: '4 600'
-									})
-								.swiper-slide.products__item 
-									+product({
-										hit: true, 
-										img: 'product-5.png',
-										name: 'Капсула LВ Caffe Crema Lungo', 
-										text: 'Артикул 142 364',
-										price: '100 000'
-									})
-								.swiper-slide.products__item
-									+product({
-										hit: true, 
-										img: 'product-2.png',
-										name: 'Снековый автомат SWING (под заказ)', 
-										text: 'Артикул 142 364',
-										price: '4 600'
-									})
-							+slider-arrow({prev: 'js-slider__prev', next: 'js-slider__next'}).slider-arrow--top-right
+			h4.products-horizontal__title Дополнительно требуется
+
+				+slider-arrow({prev: 'js-slider__prev', next: 'js-slider__next'}).products-horizontal__slider-navigation.is-active(id="slider-nav-buy-also-0")
+				+slider-arrow({prev: 'js-slider__prev', next: 'js-slider__next'}).products-horizontal__slider-navigation(id="slider-nav-buy-also-1")
+
+			.products-horizontal__container.js-tab
+
+				.products-horizontal__tabs.js-tab__list
+					button.products-horizontal__tabs-item.js-tab__item.is-active(data-id="buy-also-0") Все
+					button.products-horizontal__tabs-item.js-tab__item(data-id="buy-also-1") Оборудование
+					button.products-horizontal__tabs-item.js-tab__item(data-id="buy-also-2") Купюроприемники
+					button.products-horizontal__tabs-item.js-tab__item(data-id="buy-also-3") Монетоприемники
+
+				.tabs-container.js-tab__content
+					.js-tab__block.is-active#buy-also-0
+						.swiper.js-slider-horizontal(data-navigation="slider-nav-buy-also-0")
+							.products-horizontal__products.swiper-wrapper
+								+product_horizontal({
+									hit: true,
+									img: 'product-4.png',
+									name: 'Снековый автомат', 
+									text: 'Артикул 142 364',
+									price: '100 000'
+								})
+								+product_horizontal({
+									img: 'product-4.png',
+									name: 'Кофе в зернах BOASI «Gran Crema»', 
+									text: 'Артикул 142 364',
+									price: '785'
+								})
+								+product_horizontal({
+									img: 'product-4.png',
+									name: 'Зерновая кофемашина Necta Koro Prime ES3', 
+									text: 'Артикул 142 364',
+									price: '215 000'
+								})
+								+product_horizontal({
+									img: 'product-4.png',
+									name: 'Kikko ES6', 
+									text: 'Артикул 142 364',
+									price: '100 000'
+								})
+
+					.js-tab__block#buy-also-1
+						.swiper.js-slider-horizontal(data-navigation="slider-nav-buy-also-1")
+							.products-horizontal__products.swiper-wrapper
+								+product_horizontal({
+									sale: true,
+									img: 'product-1.png',
+									name: 'Where does it come from?', 
+									text: 'Артикул 142 364',
+									price: '100 000'
+								})
+								+product_horizontal({
+									img: 'product-2.png',
+									name: 'Why do we use it?', 
+									text: 'Артикул 142 364',
+									price: '785'
+								})
+								+product_horizontal({
+									img: 'product-3.png',
+									name: 'Where can I get some?', 
+									text: 'Артикул 142 364',
+									price: '215 000'
+								})
+
+					.js-tab__block#buy-also-2
+					.js-tab__block#buy-also-3
 
 	section.products.products--action.sec.sec--small
 		.wrapper
