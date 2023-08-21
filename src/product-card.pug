@@ -222,11 +222,11 @@ block content
 					.js-tab__block#buy-also-2
 					.js-tab__block#buy-also-3
 
-	section.products.products--action.sec.sec--small
+	section.products.sec.sec--line
 		.wrapper
 			.products__container
 				.products__tab.js-tab__list
-					h4.title.products__title &nbsp;
+					h4.title.products__title С этим товаром приобретают
 				.products__slider.swiper-container.js-slider 
 					.swiper-wrapper.products__swiper-wrapper  
 						.swiper-slide.products__item 
@@ -266,6 +266,15 @@ block content
 								text: 'Артикул 142 364',
 								price: '4 500',
 								priceOld: '5 500'
+							})
+						.swiper-slide.products__item
+							+product({
+								sale: false, 
+								img: 'product-7.png',
+								name: 'Кофе в зернах LAVAZZA Espresso «Crema e Aroma»', 
+								text: 'Артикул 142 364',
+								price: '2 100',
+								priceOld: '3 100'
 							})
 						.swiper-slide.products__item
 							+product({
